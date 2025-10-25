@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Bookable Adventures | DM Creative Solutions</title>
+</head>
+<body>
+	<header>
+		<div class="container nav">
+			<a class="brand" href="#top" aria-label="Home">
+				<img class="emblem" src="images/Logo.png" alt="DM Creative Solutions Logo" />
+				<span>Bookable Adventures</span> <small>• curated by Diona Moss</small>
+			</a>
+			<div class="links">
+				<a class="btn" href="https://dmcreativesolutions.com" target="_blank" rel="noopener">DM Creative Solutions ↗</a>
+				<a class="btn" href="#disclosure">Disclosure</a>
+			</div>
+		</div>
+	</header>
+
+	<main id="top">
+		<section class="hero">
+			<div class="container">
+				<span class="kicker"><span class="dot"></span> Hand-picked experiences</span>
+				<h1>Adventures you can book directly with trusted providers</h1>
+				<p class="sub">These are trips I’ve booked and recommend. Click a card to visit the provider’s page and complete your booking there.</p>
+				<div class="filters" aria-label="Filter by destination">
+					<button class="chip active" data-filter="all" type="button">All</button>
+					<button class="chip" data-filter="vegas" type="button">Las Vegas</button>
+					<button class="chip" data-filter="nyc" type="button">New York City</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="experiences" class="outdoors">
+			<div class="container">
+				<div class="grid" id="grid">
+					<article class="card" data-tags="vegas">
+						<div class="thumb"><img src="images/Death_Valley_Zabriskie_Point_resized.jpg" alt="Death Valley Zabriskie Point"></div>
+						<h3>Small Group One Day Tour Death Valley National Park and Rhyolite Ghost Town</h3>
+						<p>From eerie ghost towns to breathtaking desert vistas — an unforgettable full-day experience.</p>
+						<div class="tags"><span class="tag">Las Vegas</span><span class="tag">Day Trip</span></div>
+						<div class="meta">
+							<a class="out" href="PASTE_VIATOR_LINK_5" target="_blank" rel="sponsored nofollow noopener">Book on Viator ↗</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="nyc">
+						<div class="thumb"><img src="images/Statue_of_Liberty_resized.jpg" alt="New York City skyline from cruise"></div>
+						<h3>Circle Line: 1.5hr - New York City Landmarks Cruise</h3>
+						<p>See the Statue of Liberty, Brooklyn Bridge, and Manhattan skyline on this classic NYC water tour.</p>
+						<div class="tags"><span class="tag">New York City</span><span class="tag">Cruise</span></div>
+						<div class="meta">
+							<a class="out" href="PASTE_VIATOR_LINK_4" target="_blank" rel="sponsored nofollow noopener">Book on Viator ↗</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="vegas">
+						<div class="thumb"><img src="images/20210829_190008_HDR_resized.jpg" alt="Morning horseback ride through Las Vegas desert"></div>
+						<h3>Morning Horseback Ride with Breakfast from Las Vegas</h3>
+						<p>Start your day with sunrise views and a hearty cowboy-style breakfast.</p>
+						<div class="tags"><span class="tag">Las Vegas</span><span class="tag">Horseback</span></div>
+						<div class="meta">
+							<a class="out" href="PASTE_VIATOR_LINK_3" target="_blank" rel="sponsored nofollow noopener">Book on Viator ↗</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="vegas">
+						<div class="thumb"><img src="images/LakeMead_resized.jpg" alt="View of Hoover Dam from above"></div>
+						<h3>Award Winning 3-Hour Hoover Dam Small Group Mini Tour from Vegas</h3>
+						<p>Quick, comfortable, and packed with views — perfect for travelers who want a deeper look at this iconic landmark.</p>
+						<div class="tags"><span class="tag">Las Vegas</span><span class="tag">Nature</span></div>
+						<div class="meta">
+							<a class="out" href="PASTE_VIATOR_LINK_2" target="_blank" rel="sponsored nofollow noopener">Book on Viator ↗</a>
+						</div>
+					</article>
+
+					<article class="card" data-tags="vegas">
+						<div class="thumb"><img src="images/20210829_185418_HDR_resized.jpg" alt="Sunset horseback ride near Las Vegas"></div>
+						<h3>Wild West Sunset Horseback Ride with Dinner from Las Vegas</h3>
+						<p>Golden-hour desert ride, campfire vibes, and a hearty dinner under the Nevada sky.</p>
+						<div class="tags"><span class="tag">Las Vegas</span><span class="tag">Horseback</span></div>
+						<div class="meta">
+							<a class="out" href="PASTE_VIATOR_LINK_1" target="_blank" rel="sponsored nofollow noopener">Book on Viator ↗</a>
+						</div>
+					</article>
+				</div>
+				<p class="note" id="disclosure" style="margin-top:1rem">Disclosure: As an affiliate, I may earn from qualifying bookings at no extra cost to you.</p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+			<div>© <span id="y"></span> DM Creative Solutions • Bookable Adventures</div>
+			<div class="links">
+				<a class="btn" href="https://dmcreativesolutions.com" target="_blank" rel="noopener">Visit DMCS</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="index.js"></script>
+</body>
+</html>
