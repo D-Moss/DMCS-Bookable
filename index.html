@@ -3,19 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--GOOGLE FONTS-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap">
 	<link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/VNy8Btcw/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/254fH5Ct/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="https://i.postimg.cc/hG9qCGK3/favicon-16x16.png">
 	<link rel="manifest" href="images/site.webmanifest">
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<title>Bookable Adventures | DM Creative Solutions</title>
+	<title>DMCS Bookable Moments | DM Creative Solutions</title>
 </head>
 <body>
 	<header>
 		<div class="container nav">
 			<a class="brand" href="#top" aria-label="Home">
 				<img class="emblem" src="images/Logo.png" alt="DM Creative Solutions Logo" />
-				<span>Bookable Adventures</span> <small>• curated by Diona Moss</small>
+				<span>DMCS Bookable Moments</span> <small>• a DM Creative Solutions project by Diona Moss</small>
 			</a>
 			<div class="links">
 				<a class="btn" href="https://dmcreativesolutions.com" target="_blank" rel="noopener">DM Creative Solutions ↗</a>
@@ -28,12 +30,12 @@
 		<section class="hero">
 			<div class="container">
 				<span class="kicker"><span class="dot"></span> Hand-picked experiences</span>
-				<h1>Adventures you can book directly with trusted providers</h1>
-				<p class="sub">These are trips I’ve booked and recommend. Click a card to visit the provider’s page and complete your booking there.</p>
+				<h1>Bookable moments with trusted providers</h1>
+				<p class="sub">These are trips I’ve personally booked and recommend. Click a card to visit the provider’s page and complete your booking there.</p>
 				<div class="filters" aria-label="Filter by destination">
-					<button class="chip active" data-filter="all" type="button">All</button>
-					<button class="chip" data-filter="vegas" type="button">Las Vegas</button>
-					<button class="chip" data-filter="nyc" type="button">New York City</button>
+					<button class="chip active" data-filter="all" type="button" aria-pressed="true">All</button>
+					<button class="chip" data-filter="vegas" type="button" aria-pressed="false">Las Vegas</button>
+					<button class="chip" data-filter="nyc" type="button" aria-pressed="false">New York City</button>
 				</div>
 			</div>
 		</section>
@@ -90,15 +92,49 @@
 							<a class="out" href="https://www.viator.com/tours/Las-Vegas/Wild-West-Sunset-Horseback-Ride-with-Dinner/d684-5052DINNER?pid=P00265670&mcid=42383&medium=link&medium_version=selector" target="_blank" rel="sponsored nofollow noopener">Book on Viator ↗</a>
 						</div>
 					</article>
+
+					<!-- NEW coming-soon card goes here -->
+					<article class="card card-wide coming-soon-card">
+						<div class="coming-inner">
+							<!-- Left side: text -->
+							<div class="coming-text">
+								<h3>More bookable moments coming soon</h3>
+								<p>
+									I’m always planning my next adventure. Check back for new trips and more stories from the road.
+								</p>
+							</div>
+
+							<!-- Right side: poll form -->
+							<form class="poll" name="poll-favorite-adventures" method="POST" data-netlify="true">
+								<!-- Netlify Forms hidden field -->
+								<input type="hidden" name="form-name" value="poll-favorite-adventures">
+
+								<p class="poll-question">Which adventures do you like best?</p>
+								<label class="poll-option">
+									<input type="radio" name="adventure_type" value="Desert & nature escapes">
+									<span>Desert &amp; nature escapes</span>
+								</label>
+								<label class="poll-option">
+									<input type="radio" name="adventure_type" value="City tours & cruises">
+									<span>City tours &amp; cruises</span>
+								</label>
+								<label class="poll-option">
+									<input type="radio" name="adventure_type" value="Horseback & outdoor rides">
+									<span>Horseback &amp; outdoor rides</span>
+								</label>
+								<button type="submit" class="poll-submit">Submit</button>
+							</form>
+						</div>
+					</article>
 				</div>
-				<p class="note" id="disclosure" style="margin-top: 1rem">Disclosure: As an affiliate, I may earn from qualifying bookings at no extra cost to you.</p>
+				<p class="note" id="disclosure">Disclosure: As an affiliate, I may earn from qualifying bookings at no extra cost to you.</p>
 			</div>
 		</section>
 	</main>
 
 	<footer>
-		<div class="container" style="display: flex; justify-content: space-between;align-items: center; gap: 1rem;flex-wrap: wrap">
-			<div>© <span id="y"></span> DM Creative Solutions • Bookable Adventures</div>
+		<div class="container footer-inner">
+			<div>© <span id="y"></span> DM Creative Solutions • DMCS Bookable Moments</div>
 			<div class="links">
 				<a class="btn" href="https://dmcreativesolutions.com" target="_blank" rel="noopener">Visit DMCS</a>
 			</div>
