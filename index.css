@@ -404,3 +404,10 @@ footer {
 	align-items: center;
 	gap: 1rem;
 }
+
+.footerbtn {
+	background: linear-gradient(180deg, var(#fff), #3d7cee);
+	color: #ffffff;
+	border-color: #fff;
+	box-shadow: 0 12px 30px rgba(61, 124, 238, .35);
+}
