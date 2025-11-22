@@ -313,6 +313,52 @@ h1 {
 	transform: translateY(-1px);
 }
 
+.more-details-btn {
+	padding: .55rem .9rem;
+	background: transparent;
+	color: var(--text);
+	border-radius: 999px;
+	border: 1px solid var(--brand-pink);
+	font-size: .8rem;
+	font-weight: 600;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: .35rem;
+	white-space: nowrap;
+	transition:
+		background-color .15s ease,
+		border-color .15s ease,
+		transform .15s ease,
+		box-shadow .15s ease;
+}
+
+.more-details-btn::after {
+	content: "⟶";
+	font-size: .8em;
+	opacity: .8;
+}
+
+.more-details-btn:hover {
+	background: rgba(255, 255, 255, .06);
+	border-color: var(--brand-magenta);
+	transform: translateY(-1px);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, .35);
+}
+
+@media (max-width: 600px) {
+	.meta {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.out,
+	.more-details-btn {
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
 /*Big Card*/
 .card-wide {
 	grid-column: 1 / -1;
@@ -376,6 +422,71 @@ h1 {
 	.card.coming-soon-card .coming-text,
 	.card.coming-soon-card .poll {
 		flex: 1;
+	}
+}
+
+.modal-paragraph {
+	margin: 0;
+	color: #f7f3e9;
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+/* MODAL BASE STYLES */
+.modal {
+	display: none;
+	align-items: center;
+	position: fixed;
+	inset: 0;
+	justify-content: center;
+	z-index: 1000;
+}
+
+/* When active, show the modal as a centered flex container */
+.modal.is-visible {
+	display: flex;
+}
+
+/* Dark overlay behind the modal window */
+.modal-overlay {
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	inset: 0;
+}
+
+/* Modal window itself */
+.modal-content {
+	padding: 1.5rem 1.25rem 1.25rem;
+	background: var(--navy-deep);
+	color: var(--text);
+	border-radius: 18px;
+	border: 1px solid var(--brand-pink);
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.65);
+	position: relative;
+	max-width: 720px;
+	width: 90%;
+	max-height: 90vh;
+	overflow-y: auto;
+}
+
+/* Basic close button positioning (we can fancy this up later) */
+.modal-close {
+	background: transparent;
+	color: var(--text);
+	font-size: 1.5rem;
+	border: none;
+	position: absolute;
+	top: 0.75rem;
+	right: 1rem;
+	cursor: pointer;
+}
+
+/* Mobile-friendly tweak */
+@media (max-width: 600px) {
+	.modal-content {
+		width: 92%;
+		padding: 1.25rem 1rem 1rem;
+		border-radius: 16px;
 	}
 }
 
