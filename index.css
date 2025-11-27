@@ -523,7 +523,7 @@ h1 {
 /* Modal window itself */
 .modal-content {
 	padding: 1.5rem 1.25rem 1.25rem;
-	background: var(--navy-deep);
+	background: var(--color-navy);
 	color: var(--text);
 	border-radius: 18px;
 	border: 1px solid var(--brand-pink);
